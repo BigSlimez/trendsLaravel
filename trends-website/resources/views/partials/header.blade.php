@@ -7,7 +7,7 @@
             <li><a href="#line-up">Line Up</a></li>
             <li><a href="#ticket-link">Tickets</a></li>
             <li><a href="#partners-link">Partners</a></li>
-            <li><a href="">Koop Tickets</a></li>
+            <li><a href="{{route('pages.tickets')}}">Koop Tickets</a></li>
         </ul>
     </nav>
 

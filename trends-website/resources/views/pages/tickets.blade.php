@@ -16,14 +16,14 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="./pages/tickets.html">Koop Tickets</a></li>
+                <li><a href="{{route('index')}}">Home</a></li>
+
             </ul>
         </nav>
     </header>
     <div class="wrapper">
 
-        <form id="formOrder">
+        <form id="formOrder" action="" method="post">
             <h2 id="under-headline">Gegevens</h2>
             <label for="voornaam">Voornaam:</label><br>
             <input type="text" id="voornaam" name="voornaam"><br>

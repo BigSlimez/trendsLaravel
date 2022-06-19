@@ -5,11 +5,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('content.index');
-});
+})->name('index') ;
 
-Route::get('tickets', function () {
+Route::get('/tickets', function () {
     return view('pages.tickets');
-});
+})->name('pages.tickets') ;
 
 Route::get('/generate-qrcode', [QrCodeController::class, 'index']);
 
