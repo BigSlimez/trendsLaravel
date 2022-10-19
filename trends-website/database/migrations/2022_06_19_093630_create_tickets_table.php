@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('tickets', function (Blueprint $table) {
             $table->id();
             $table->double('prijs');
-            $table->string('achternaam');
+            $table->string('voornaam');
             $table->string('naam');
             $table->string('email');
             $table->date('geboortedatum');

@@ -21,9 +21,9 @@
             </ul>
         </nav>
     </header>
-    <div class="wrapper">
+    <div class="wrapper mt-5">
 
-        <form id="formOrder" action="" method="post">
+        <form id="formOrder" action="{{route('tickets.store')}}" method="post">
             <h2 id="under-headline">Gegevens</h2>
             <label for="voornaam">Voornaam:</label><br>
             <input type="text" id="voornaam" name="voornaam"><br>

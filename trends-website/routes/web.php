@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\QrCodeController;
+use App\Http\Controllers\ticketController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -10,6 +11,10 @@ Route::get('/', function () {
 Route::get('/tickets', function () {
     return view('pages.tickets');
 })->name('pages.tickets') ;
+
+Route::resource('tickets', ticketController::class);
+
+Route::get('/', [ticketController::class, 'index'])->name('index');
 
 Route::get('/generate-qrcode', [QrCodeController::class, 'index']);
 
